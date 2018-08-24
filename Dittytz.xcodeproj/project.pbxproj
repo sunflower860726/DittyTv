@@ -15,6 +15,8 @@
 		8438F7AC21308D6500FB930F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8438F7AA21308D6500FB930F /* LaunchScreen.storyboard */; };
 		8438F7B721308D6600FB930F /* DittytzTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8438F7B621308D6600FB930F /* DittytzTests.swift */; };
 		8438F7C221308D6600FB930F /* DittytzUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8438F7C121308D6600FB930F /* DittytzUITests.swift */; };
+		8438F7D021308F6600FB930F /* ShowsListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8438F7CF21308F6600FB930F /* ShowsListVC.swift */; };
+		8438F7D421309C7A00FB930F /* BrandCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8438F7D321309C7A00FB930F /* BrandCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		8438F7BD21308D6600FB930F /* DittytzUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DittytzUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8438F7C121308D6600FB930F /* DittytzUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DittytzUITests.swift; sourceTree = "<group>"; };
 		8438F7C321308D6600FB930F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8438F7CF21308F6600FB930F /* ShowsListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowsListVC.swift; sourceTree = "<group>"; };
+		8438F7D321309C7A00FB930F /* BrandCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 		8438F79E21308D6500FB930F /* Dittytz */ = {
 			isa = PBXGroup;
 			children = (
+				8438F7D221309C3600FB930F /* Component */,
+				8438F7D121309C2100FB930F /* VController */,
 				8438F79F21308D6500FB930F /* AppDelegate.swift */,
 				8438F7A121308D6500FB930F /* FirstViewController.swift */,
 				8438F7A321308D6500FB930F /* SecondViewController.swift */,
@@ -106,6 +112,7 @@
 				8438F7A821308D6500FB930F /* Assets.xcassets */,
 				8438F7AA21308D6500FB930F /* LaunchScreen.storyboard */,
 				8438F7AD21308D6500FB930F /* Info.plist */,
+				8438F7CF21308F6600FB930F /* ShowsListVC.swift */,
 			);
 			path = Dittytz;
 			sourceTree = "<group>";
@@ -126,6 +133,21 @@
 				8438F7C321308D6600FB930F /* Info.plist */,
 			);
 			path = DittytzUITests;
+			sourceTree = "<group>";
+		};
+		8438F7D121309C2100FB930F /* VController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VController;
+			sourceTree = "<group>";
+		};
+		8438F7D221309C3600FB930F /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				8438F7D321309C7A00FB930F /* BrandCell.swift */,
+			);
+			path = Component;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,7 +284,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8438F7D421309C7A00FB930F /* BrandCell.swift in Sources */,
 				8438F7A421308D6500FB930F /* SecondViewController.swift in Sources */,
+				8438F7D021308F6600FB930F /* ShowsListVC.swift in Sources */,
 				8438F7A021308D6500FB930F /* AppDelegate.swift in Sources */,
 				8438F7A221308D6500FB930F /* FirstViewController.swift in Sources */,
 			);
