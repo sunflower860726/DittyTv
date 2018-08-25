@@ -17,6 +17,8 @@
 		8438F7C221308D6600FB930F /* DittytzUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8438F7C121308D6600FB930F /* DittytzUITests.swift */; };
 		8438F7D021308F6600FB930F /* ShowsListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8438F7CF21308F6600FB930F /* ShowsListVC.swift */; };
 		8438F7D421309C7A00FB930F /* BrandCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8438F7D321309C7A00FB930F /* BrandCell.swift */; };
+		84F14D6D213126C700DF885F /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F14D6C213126C700DF885F /* CustomTabBar.swift */; };
+		84F14D71213150F800DF885F /* AboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F14D70213150F800DF885F /* AboutVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		8438F7C321308D6600FB930F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8438F7CF21308F6600FB930F /* ShowsListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowsListVC.swift; sourceTree = "<group>"; };
 		8438F7D321309C7A00FB930F /* BrandCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandCell.swift; sourceTree = "<group>"; };
+		84F14D6C213126C700DF885F /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
+		84F14D70213150F800DF885F /* AboutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +108,6 @@
 			isa = PBXGroup;
 			children = (
 				8438F7D221309C3600FB930F /* Component */,
-				8438F7D121309C2100FB930F /* VController */,
 				8438F79F21308D6500FB930F /* AppDelegate.swift */,
 				8438F7A121308D6500FB930F /* FirstViewController.swift */,
 				8438F7A321308D6500FB930F /* SecondViewController.swift */,
@@ -113,6 +116,7 @@
 				8438F7AA21308D6500FB930F /* LaunchScreen.storyboard */,
 				8438F7AD21308D6500FB930F /* Info.plist */,
 				8438F7CF21308F6600FB930F /* ShowsListVC.swift */,
+				84F14D70213150F800DF885F /* AboutVC.swift */,
 			);
 			path = Dittytz;
 			sourceTree = "<group>";
@@ -135,17 +139,11 @@
 			path = DittytzUITests;
 			sourceTree = "<group>";
 		};
-		8438F7D121309C2100FB930F /* VController */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = VController;
-			sourceTree = "<group>";
-		};
 		8438F7D221309C3600FB930F /* Component */ = {
 			isa = PBXGroup;
 			children = (
 				8438F7D321309C7A00FB930F /* BrandCell.swift */,
+				84F14D6C213126C700DF885F /* CustomTabBar.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -218,7 +216,7 @@
 				TargetAttributes = {
 					8438F79B21308D6500FB930F = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					8438F7B121308D6600FB930F = {
 						CreatedOnToolsVersion = 9.2;
@@ -284,8 +282,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84F14D71213150F800DF885F /* AboutVC.swift in Sources */,
 				8438F7D421309C7A00FB930F /* BrandCell.swift in Sources */,
 				8438F7A421308D6500FB930F /* SecondViewController.swift in Sources */,
+				84F14D6D213126C700DF885F /* CustomTabBar.swift in Sources */,
 				8438F7D021308F6600FB930F /* ShowsListVC.swift in Sources */,
 				8438F7A021308D6500FB930F /* AppDelegate.swift in Sources */,
 				8438F7A221308D6500FB930F /* FirstViewController.swift in Sources */,
@@ -454,11 +454,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Dittytz/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Dittytz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -468,11 +470,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Dittytz/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Dittytz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

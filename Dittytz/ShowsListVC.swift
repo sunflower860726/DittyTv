@@ -9,6 +9,7 @@
 import UIKit
 
 class ShowsListVC: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+    
     var items:[String] = ["CAMPFIRE", "CHARTS", "CONCERTSERIES", "EARTHTONES", "ELEVEN", "GPS", "INSIGHTS", "RYTHMROOTS", "SOULSIDE", "STANDBYYOURVAN", "THECURVE", "TRES"]
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return items.count
@@ -16,10 +17,7 @@ class ShowsListVC: UIViewController, UICollectionViewDataSource, UICollectionVie
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "BrandCell", for: indexPath as IndexPath) as! BrandCell
-        cell.backgroundColor = UIColor.brown
-        let image: UIImage = UIImage(named: "DTV.SHOW." + items[indexPath.count])!
-        cell.imageView = UIImageView.init(image: image)
-        
+         cell.imageView.image = UIImage(named: "DTV.SHOW.LOGO."+items[indexPath.row])
         return cell
     }
     
@@ -29,6 +27,13 @@ class ShowsListVC: UIViewController, UICollectionViewDataSource, UICollectionVie
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         BrandCollection.delegate = self
+        BrandCollection.dataSource = self
+        //customize navigationBar
+        let navigationBar = navigationController!.navigationBar
+        
+        navigationBar.isTranslucent = false
+        navigationBar.setBackgroundImage(UIImage(), for: .default)
+        navigationBar.shadowImage = UIImage()
 
     }
 
