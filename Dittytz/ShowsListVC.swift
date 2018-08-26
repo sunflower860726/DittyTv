@@ -20,7 +20,13 @@ class ShowsListVC: UIViewController, UICollectionViewDataSource, UICollectionVie
          cell.imageView.image = UIImage(named: "DTV.SHOW.LOGO."+items[indexPath.row])
         return cell
     }
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath)
+    {
+        let desinationVC = self.storyboard?.instantiateViewController(withIdentifier: "ShowsListDetailVC") as! ShowsListDetailVC
+        self.navigationController?.pushViewController(desinationVC, animated: true)
+        desinationVC.brandName = "DTV.SHOW.LOGO."+items[indexPath.row]
+         
+    }
 
     @IBOutlet var BrandCollection: UICollectionView!
     override func viewDidLoad() {
