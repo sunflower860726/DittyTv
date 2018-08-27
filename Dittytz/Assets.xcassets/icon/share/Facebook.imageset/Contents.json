@@ -2,11 +2,12 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "Rectangle.png",
+      "filename" : "Facebook.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "Facebook@2x.png",
       "scale" : "2x"
     },
     {

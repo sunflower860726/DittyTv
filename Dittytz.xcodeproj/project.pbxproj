@@ -27,6 +27,9 @@
 		849F1B372131B7BF006623A6 /* LiveTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849F1B362131B7BF006623A6 /* LiveTableVC.swift */; };
 		84F14D6D213126C700DF885F /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F14D6C213126C700DF885F /* CustomTabBar.swift */; };
 		84F14D71213150F800DF885F /* AboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F14D70213150F800DF885F /* AboutVC.swift */; };
+		84FC527A2133CE8D0003B72F /* CustomNavCV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FC52792133CE8D0003B72F /* CustomNavCV.swift */; };
+		84FC527C2133EAAE0003B72F /* PodcastDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FC527B2133EAAE0003B72F /* PodcastDetailVC.swift */; };
+		84FC527E21341E340003B72F /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FC527D21341E340003B72F /* MenuVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +76,9 @@
 		849F1B362131B7BF006623A6 /* LiveTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveTableVC.swift; sourceTree = "<group>"; };
 		84F14D6C213126C700DF885F /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
 		84F14D70213150F800DF885F /* AboutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutVC.swift; sourceTree = "<group>"; };
+		84FC52792133CE8D0003B72F /* CustomNavCV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavCV.swift; sourceTree = "<group>"; };
+		84FC527B2133EAAE0003B72F /* PodcastDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastDetailVC.swift; sourceTree = "<group>"; };
+		84FC527D21341E340003B72F /* MenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +146,8 @@
 				840A605C21331F3D00C0FCFF /* ShowsListDetailVC.swift */,
 				840A605E2133250000C0FCFF /* View.xib */,
 				840A6060213333C600C0FCFF /* ShowsPlayVC.swift */,
+				84FC527B2133EAAE0003B72F /* PodcastDetailVC.swift */,
+				84FC527D21341E340003B72F /* MenuVC.swift */,
 			);
 			path = Dittytz;
 			sourceTree = "<group>";
@@ -168,6 +176,7 @@
 				8438F7D321309C7A00FB930F /* BrandCell.swift */,
 				84F14D6C213126C700DF885F /* CustomTabBar.swift */,
 				840A60512131F3FF00C0FCFF /* VideoSlider.swift */,
+				84FC52792133CE8D0003B72F /* CustomNavCV.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -311,11 +320,14 @@
 				8438F7D421309C7A00FB930F /* BrandCell.swift in Sources */,
 				840A60522131F3FF00C0FCFF /* VideoSlider.swift in Sources */,
 				8438F7A421308D6500FB930F /* SecondViewController.swift in Sources */,
+				84FC527E21341E340003B72F /* MenuVC.swift in Sources */,
 				84F14D6D213126C700DF885F /* CustomTabBar.swift in Sources */,
 				8438F7D021308F6600FB930F /* ShowsListVC.swift in Sources */,
 				8438F7A021308D6500FB930F /* AppDelegate.swift in Sources */,
 				849F1B3321318229006623A6 /* PodcastTableVC.swift in Sources */,
 				840A605D21331F3D00C0FCFF /* ShowsListDetailVC.swift in Sources */,
+				84FC527A2133CE8D0003B72F /* CustomNavCV.swift in Sources */,
+				84FC527C2133EAAE0003B72F /* PodcastDetailVC.swift in Sources */,
 				8438F7A221308D6500FB930F /* FirstViewController.swift in Sources */,
 				840A60502131F23700C0FCFF /* LiveDetailVC.swift in Sources */,
 				849F1B352131B354006623A6 /* workVC.swift in Sources */,

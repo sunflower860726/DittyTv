@@ -14,6 +14,7 @@ class PodcastTableVC: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        tableView.backgroundView = UIImageView(image: UIImage(named: "podcastfirstbg"))
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 

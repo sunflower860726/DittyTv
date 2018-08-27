@@ -35,7 +35,11 @@ class LiveDetailVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    @IBAction func pressBack(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
+        navigationController?.navigationBar.isHidden = false
+    }
+    
     /*
     // MARK: - Navigation
 
