@@ -28,6 +28,10 @@ class ShowsListVC: UIViewController, UICollectionViewDataSource, UICollectionVie
          
     }
 
+    @IBAction func pressMenuBtn(_ sender: Any) {
+        let desinationVC = self.storyboard?.instantiateViewController(withIdentifier: "MenuVC") as! MenuVC
+        self.navigationController?.pushViewController(desinationVC, animated: true)
+    }
     @IBOutlet var BrandCollection: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()

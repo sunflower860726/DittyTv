@@ -21,7 +21,10 @@ class ShowsListDetailVC: UIViewController, UITableViewDelegate, UITableViewDataS
         
         
     }
-
+    @IBAction func pressMenuBtn(_ sender: Any) {
+        let desinationVC = self.storyboard?.instantiateViewController(withIdentifier: "MenuVC") as! MenuVC
+        self.navigationController?.pushViewController(desinationVC, animated: true)
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

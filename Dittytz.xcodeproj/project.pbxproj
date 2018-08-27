@@ -12,6 +12,11 @@
 		840A605D21331F3D00C0FCFF /* ShowsListDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840A605C21331F3D00C0FCFF /* ShowsListDetailVC.swift */; };
 		840A605F2133250000C0FCFF /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 840A605E2133250000C0FCFF /* View.xib */; };
 		840A6061213333C600C0FCFF /* ShowsPlayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840A6060213333C600C0FCFF /* ShowsPlayVC.swift */; };
+		8414065B21345C950080631B /* ScheduleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8414065A21345C950080631B /* ScheduleVC.swift */; };
+		8414065D21345E120080631B /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8414065C21345E120080631B /* ProfileVC.swift */; };
+		8414065F2134600E0080631B /* StoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8414065E2134600E0080631B /* StoreVC.swift */; };
+		84140661213460230080631B /* DittyWebVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84140660213460230080631B /* DittyWebVC.swift */; };
+		84140663213460390080631B /* PrivacyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84140662213460390080631B /* PrivacyVC.swift */; };
 		8438F7A021308D6500FB930F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8438F79F21308D6500FB930F /* AppDelegate.swift */; };
 		8438F7A221308D6500FB930F /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8438F7A121308D6500FB930F /* FirstViewController.swift */; };
 		8438F7A421308D6500FB930F /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8438F7A321308D6500FB930F /* SecondViewController.swift */; };
@@ -55,6 +60,11 @@
 		840A605C21331F3D00C0FCFF /* ShowsListDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowsListDetailVC.swift; sourceTree = "<group>"; };
 		840A605E2133250000C0FCFF /* View.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
 		840A6060213333C600C0FCFF /* ShowsPlayVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowsPlayVC.swift; sourceTree = "<group>"; };
+		8414065A21345C950080631B /* ScheduleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleVC.swift; sourceTree = "<group>"; };
+		8414065C21345E120080631B /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		8414065E2134600E0080631B /* StoreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreVC.swift; sourceTree = "<group>"; };
+		84140660213460230080631B /* DittyWebVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DittyWebVC.swift; sourceTree = "<group>"; };
+		84140662213460390080631B /* PrivacyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyVC.swift; sourceTree = "<group>"; };
 		8438F79C21308D6500FB930F /* Dittytz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dittytz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8438F79F21308D6500FB930F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8438F7A121308D6500FB930F /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -148,6 +158,11 @@
 				840A6060213333C600C0FCFF /* ShowsPlayVC.swift */,
 				84FC527B2133EAAE0003B72F /* PodcastDetailVC.swift */,
 				84FC527D21341E340003B72F /* MenuVC.swift */,
+				8414065A21345C950080631B /* ScheduleVC.swift */,
+				8414065C21345E120080631B /* ProfileVC.swift */,
+				8414065E2134600E0080631B /* StoreVC.swift */,
+				84140660213460230080631B /* DittyWebVC.swift */,
+				84140662213460390080631B /* PrivacyVC.swift */,
 			);
 			path = Dittytz;
 			sourceTree = "<group>";
@@ -319,8 +334,10 @@
 				84F14D71213150F800DF885F /* AboutVC.swift in Sources */,
 				8438F7D421309C7A00FB930F /* BrandCell.swift in Sources */,
 				840A60522131F3FF00C0FCFF /* VideoSlider.swift in Sources */,
+				8414065D21345E120080631B /* ProfileVC.swift in Sources */,
 				8438F7A421308D6500FB930F /* SecondViewController.swift in Sources */,
 				84FC527E21341E340003B72F /* MenuVC.swift in Sources */,
+				8414065B21345C950080631B /* ScheduleVC.swift in Sources */,
 				84F14D6D213126C700DF885F /* CustomTabBar.swift in Sources */,
 				8438F7D021308F6600FB930F /* ShowsListVC.swift in Sources */,
 				8438F7A021308D6500FB930F /* AppDelegate.swift in Sources */,
@@ -328,6 +345,9 @@
 				840A605D21331F3D00C0FCFF /* ShowsListDetailVC.swift in Sources */,
 				84FC527A2133CE8D0003B72F /* CustomNavCV.swift in Sources */,
 				84FC527C2133EAAE0003B72F /* PodcastDetailVC.swift in Sources */,
+				84140661213460230080631B /* DittyWebVC.swift in Sources */,
+				84140663213460390080631B /* PrivacyVC.swift in Sources */,
+				8414065F2134600E0080631B /* StoreVC.swift in Sources */,
 				8438F7A221308D6500FB930F /* FirstViewController.swift in Sources */,
 				840A60502131F23700C0FCFF /* LiveDetailVC.swift in Sources */,
 				849F1B352131B354006623A6 /* workVC.swift in Sources */,
