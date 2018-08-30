@@ -16,27 +16,36 @@ class MenuVC: UIViewController{
         super.viewDidLoad()
         navigationController?.navigationBar.isHidden = true
         self.tabBarController?.tabBar.isHidden = true
-//        let tap = UITapGestureRecognizer(target: self, action: #selector(self.touchTapped(_:)))
-//        LiveView.addGestureRecognizer(tap)
-//        NewView.addGestureRecognizer(tap)
-        // Do any additional setup after loading the view.
+
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    @IBAction func pressLive(_ sender: Any) {
+        //let destVC = self.storyboard?.instantiateViewController(withIdentifier: "LiveDetailVC") as! LiveDetailVC
+        
+        //let viewControllers = navigationController?.viewControllers
+        
+        //viewControllers?.removeLast(1) //here 2 views to pop index numbers of views
+        
+        //navigationController?.setViewControllers(viewControllers!, animated: true)
+        
 
+        //self.navigationController?.pushViewController(destVC, animated: true)
+        //self.navigationController?.viewControllers.removeLast()
+        //self.navigationController?.popViewController(animated: false)
+        self.tabBarController?.tabBar.isHidden = false
+        self.tabBarController?.selectedIndex = 2
+        self.navigationController?.popViewController(animated: false)
+        
+    }
+    
     @IBAction func tap(_ sender: UITapGestureRecognizer) {
         print("asdfasdfasdfasdf")
         let tag = sender.view!.tag
         let destination = ["LiveTableVC", "NewsVC", "ScheduleVC"," ShowsListVC", "PodcastTableVC", "StoreVC", "AboutVC", "DittyWebVC", "PrivacyVC", "ProfileVC"]
-        
-//        let desinationVC = self.storyboard?.instantiateViewController(withIdentifier: destination[tag-1]) as! UIViewController
-//        self.navigationController?.popViewController(animated: true)
-//        self.navigationController?.pushViewController(desinationVC, animated: true)
-//        self.tabBarController?.tabBar.isHidden = false
-        //self.tabBarController.se
 
     }
 

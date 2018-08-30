@@ -46,7 +46,9 @@ class ShowsListVC: UIViewController, UICollectionViewDataSource, UICollectionVie
         navigationBar.shadowImage = UIImage()
 
     }
-
+    override func viewDidAppear(_ animated: Bool) {
+        navigationController?.navigationBar.isHidden = false
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

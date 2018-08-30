@@ -10,36 +10,80 @@ import UIKit
 import AVFoundation
 class LiveDetailVC: UIViewController {
 
-    @IBOutlet weak var videoView: UIView!
     
+    @IBOutlet weak var videoView: UIImageView!
+    @IBOutlet weak var loaderIndicator: UIActivityIndicatorView!
     var player: AVPlayer!
     var playerLayer: AVPlayerLayer!
     var isVideoPlaying = false
     
+    @IBOutlet weak var playstopBtn: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         self.navigationController?.navigationBar.isHidden = true
-        let url = URL(string: "https://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4")!
+        let url = URL(string: "https://mobile.dittytv.com/dittytv.stream_mobile/playlist.m3u8")!
         player = AVPlayer(url:url)
-        // player.currentItem?.addObserver(self, forKeyPath: "duration", options: [.new, .initial], context: nil)
         playerLayer = AVPlayerLayer(player: player)
-        playerLayer.videoGravity = .resize
-        videoView.layer.addSublayer(playerLayer)
-    }
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
+        playerLayer.videoGravity = .resizeAspectFill
         playerLayer.frame = videoView.bounds
+        videoView.layer.addSublayer(playerLayer)
+        playerLayer.player?.play()
+        
+        player.currentItem?.addObserver(self, forKeyPath: "playbackBufferEmpty", options: .new, context: nil)
+        player.currentItem?.addObserver(self, forKeyPath: "playbackLikelyToKeepUp", options: .new, context: nil)
+        player.currentItem?.addObserver(self, forKeyPath: "playbackBufferFull", options: .new, context: nil)
+        
+        loaderIndicator.isHidden = true
+        print("dddddddddd")
+        print(player.volume)
+        
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        player.pause()
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    @IBAction func pressBack(_ sender: Any) {
-        navigationController?.popViewController(animated: true)
-        navigationController?.navigationBar.isHidden = false
+    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?)  {
+        if object is AVPlayerItem {
+            switch keyPath {
+            case "playbackBufferEmpty"?:
+                // Show loader
+                loaderIndicator.isHidden = false
+                loaderIndicator.startAnimating()
+                break
+            case "playbackLikelyToKeepUp"?:
+                // Hide loader
+                loaderIndicator.isHidden = true
+                loaderIndicator.stopAnimating()
+                break
+            case "playbackBufferFull"?:
+                // Hide loader
+                loaderIndicator.isHidden = true
+                loaderIndicator.stopAnimating()
+                break
+            case .none:
+                return
+            case .some(_):
+                return
+            }
+        }
     }
     
+    @IBAction func pressPlayStopBtn(_ sender: Any) {
+        if isVideoPlaying == false {
+            player.play()
+            isVideoPlaying = true
+            playstopBtn.setImage(UIImage(named: "forward"), for: .normal)
+        } else {
+            
+            player.pause()
+            isVideoPlaying = false
+            playstopBtn.setImage(UIImage(named: "bigPlay"), for: .normal)
+        }
+    }
     /*
     // MARK: - Navigation
 
